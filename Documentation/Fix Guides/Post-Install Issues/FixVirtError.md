@@ -18,12 +18,14 @@ You may encounter this problem, even if Virtualization is enabled on your PC (in
 
 1. ***Remove WSA***: Right clicking on "Windows Subsystem for Android™ Settings" and pressing uninstall + Deleting the extracted WSA (MagiskOnWSA/WSABuilds) folder that you extracted and installed from.
 
+&nbsp;
+
 2. ***Go to "Turn Windows features on and off" and if any of these features below are enabled, DISABLE THEM.***
 
-- Hyper-V
-- Virtual Machine Platform
-- Windows Hypervisor Platform
-- Windows Subsystem for Linux
+    - Hyper-V
+    - Virtual Machine Platform
+    - Windows Hypervisor Platform
+    - Windows Subsystem for Linux
 
 &nbsp;
 
@@ -42,12 +44,14 @@ You may encounter this problem, even if Virtualization is enabled on your PC (in
 
 &nbsp;
 
-6.  ***In registry editor (regedit), go to “\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\FsDepends"***
-
-    Change the value of “Start” from “3” to “0”
-
-> [!NOTE]
-> You can change it back to 3, if it makes no difference
+6.  In registry editor (regedit):
+   
+    - Go to ``\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\FsDepends``
+        - Change the value of ``Start`` from ``3`` to ``0``
+   
+    - Go to ``HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\DeviceGuard``
+        - Change the value of ``EnableVirtualizationBasedSecurity`` to ``0``
+        - If you do not have a ``EnableVirtualizationBasedSecurity`` DWORD value, create one by right-clicking and adding a new ``DWORD (32 bit)`` value. Rename it to ``EnableVirtualizationBasedSecurity`` and make sure that the value is set to ``0``.    
 
 &nbsp;
 
@@ -80,20 +84,20 @@ bcdedit /set hypervisorlaunchtype auto
 
 &nbsp;
 
-**Hope this works for you!**
 
 <br />
 <br />
 
-- ### For AtlasOS Users:
+
+### For AtlasOS Users:
 
 
-    - #### If the steps above still do not fix your issue, go to the AtlasOS configuration folder and run the "Enable Hyper-V and VBS" CMD file. Then restart your PC and try running WSA again  
+- #### If the steps above still do not fix your issue, go to the AtlasOS configuration folder and run the ``Enable Hyper-V and VBS`` CMD file. Then restart your PC and try running WSA again  
 
 
-        <img src="https://github.com/MustardChef/WSABuilds/assets/68516357/1c8ec5b1-b071-4923-9c00-2f7449adf75c" width=70% height=70%>
+  <img src="https://github.com/MustardChef/WSABuilds/assets/68516357/1c8ec5b1-b071-4923-9c00-2f7449adf75c" width=70% height=70%>
 
-        <img src="https://github.com/MustardChef/WSABuilds/assets/68516357/738d4850-f7da-4408-b2f5-8483c30e1a9f" alt="Image description">
+  <img src="https://github.com/MustardChef/WSABuilds/assets/68516357/738d4850-f7da-4408-b2f5-8483c30e1a9f" alt="Image description">
 
 <br />
 <br />

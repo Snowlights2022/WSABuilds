@@ -29,10 +29,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout ♻️
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Python 🏭
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           check-latest: true
           python-version: '3.x'
@@ -56,7 +56,7 @@ jobs:
       - name: Install Ubuntu Dependencies 🧑‍🏭
         uses: awalsh128/cache-apt-pkgs-action@v1
         with:
-          packages: e2fsprogs attr unzip qemu-utils python3-venv
+          packages: e2fsprogs attr unzip qemu-utils python3-venv curl xmlstarlet
           version: 1.0
 
       - name: Check workflow inputs
@@ -86,6 +86,13 @@ jobs:
           mkdir -p download
           ./scripts/build.sh --arch ${{ inputs.arch }} --release-type latest --magisk-ver ${{ inputs.magiskver }} --gapps-brand ${{ inputs.gappsver }} --root-sol ${{ inputs.root }} --custom-model ${{ inputs.devicemodel }} ${{ inputs.amazonflag }} --compress-format ${{ inputs.compressformat }}
 
+      - name: Install Houdini and Process Images 🔧
+        working-directory: MagiskOnWSAOld
+        run: |      
+          chmod +x ./libhoudini/houdini_installer.sh
+          ./libhoudini/houdini_installer.sh "${{ steps.wsa.outputs.artifact_folder }}"
+        shell: bash
+
       - name: Prepare release tag 🏷️
         id: releasetag
         run: |
@@ -111,7 +118,7 @@ jobs:
           echo ${{ env.DRIVE_FOLDER_PATH_WIN10 }}    
           
       - name: Pass to Windows 💸
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: ${{ steps.wsa.outputs.artifact }}-${{ steps.wsa.outputs.built }}
           path: MagiskOnWSAOld/output
@@ -133,10 +140,10 @@ jobs:
     needs: build
     steps:
       - name: Checkout ♻️
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Download built artifact ⌛
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v6
         with:
           path: output
           name: ${{ needs.build.outputs.zipname }}-${{ needs.build.outputs.built }}

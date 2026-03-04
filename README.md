@@ -1,60 +1,20 @@
-> [!IMPORTANT]  
-> <details>
-> <summary><h3>IF YOU HAVE BEEN RECENTLY HAVING ISSUES WITH SOME APPS BREAKING OR NOT STARTING OR APPS GETTING SUCK AT LOADING SCREEN OR APPS STUCK ON SPLASHSCREEN ( STUCK ON THE APP ICON SCREEN) OR ANY OTHER SIMILAR CASES. (CLICK HERE)</h3></summary>
->   
-> ### UPDATE TO THE LATEST LTS AND NON-LTS RELEASES:
+> [!CAUTION]
 >
-> - ### LTS Releases:
->    - ``Magisk is bundled by default on builds with Google Apps (GApps)):``
->    - [Windows 11 x64](https://github.com/MustardChef/WSABuilds/releases/tag/Windows_11_2407.40000.4.0_LTS_6)
->    - [Windows 10 x64](https://github.com/MustardChef/WSABuilds/releases/tag/Windows_10_2407.40000.4.0_LTS_6)
+> # It seems that the last few Windows Updates released on many/all of the update channels (issue started from July) are breaking WSA installations for many users! 
 >
-> - ### Non-LTS Releases: 
->    - ``(If you don't want Magisk being bundled by default) (Releases contain no Magisk builds)``
->    - [Windows 11 x64](https://github.com/MustardChef/WSABuilds/releases/tag/Windows_11_2407.40000.4.0)
->    - [Windows 10 x64](https://github.com/MustardChef/WSABuilds/releases/tag/Windows_10_2407.40000.4.0)
+> - ## If you are affected by the issue, try these current workarounds:
+>   - ### RECOMMENDED FIX FOR BUILDS CONTAINING GAPPS (Google Play Store and Services): https://github.com/MustardChef/WSABuilds/issues/593#issuecomment-3172749449
+>       OR
+>   - #### Switch/Use the builds which do not contain GApps. These are the builds that contain ``NoGApps`` in their .7z archive names. 
+>   - #### Really old builds of WSA (2211/2210) are known to be working.  
+> - ## Refer to https://github.com/MustardChef/WSABuilds/issues/593 for more information regarding the issue.
 >
-> #### LET ME KNOW VIA GITHUB ISSUES, THE WSA COMMUNITY DISCORD OR THE r/WSA SUBREDDIT IF THESE RELEASES HAVE SOLVED YOUR ISSUE. THANK YOU.
-> </details>
 
 > [!TIP]
-> <details>
-> <summary><h2> WSA End Of Support (EoS) Information (Click Here)</h2></summary>
-> 
-> ## "Microsoft is ending support for the Windows Subsystem for Android™️ (WSA). As a result, the Amazon Appstore on Windows and all applications and games dependent on WSA will no longer be supported beginning March 5, 2025." 
-> ###### (Source: [GitHub](https://github.com/microsoft/WSA/discussions/536) and [Microsoft Learn](https://learn.microsoft.com/en-us/windows/android/wsa/))
-> ---
-> ### WSABuilds has entered LTS (Long Term Support) for WSA versions ≥ 2311.40000.5.0, where the Magisk version, KernelSU version and GApps version will be kept up to date via new releases.
-> ### This repo will not be archived and support will still be given to any users installing WSA Builds from this repo. Thank you all for using this repository and supporting my work, its been a pleasure serving this community. 
-> ### Do make sure that you keep a look out for any updates to this repo to be notified of any futher changes to WSA and WSABuilds      
->
-> ---
-> </details>
->
-> 
-> <details>
-> <summary><h2>Next LTS and Non-LTS Release Date: (Click Here)</h2></summary>
->   
-> ### Non-LTS Build Update (v2407.40000.4.0):
-> ~~``Monday 9th December 2024``~~  **Available Now (via the Stable release buttons in [Downloads](https://github.com/MustardChef/WSABuilds#downloads))**
-> ### WSABuilds LTS 6 (v2407.40000.4.0) 
-> ~~``Monday 9th December 2024``~~  **Available Now (via the Pre-release buttons in [Downloads](https://github.com/MustardChef/WSABuilds#downloads))** 
-> ### Non-LTS Build Update (v2407.40000.0.0):
-> ~~``Thursday 5th December 2024``~~  **Available Now (via the Stable release buttons in [Downloads](https://github.com/MustardChef/WSABuilds#downloads))**
-> ### WSABuilds LTS 5 (v2407.40000.0.0) 
-> ~~``Thursday 5th December 2024``~~  **Available Now (via the Pre-release buttons in [Downloads](https://github.com/MustardChef/WSABuilds#downloads))** 
-> ### WSABuilds LTS 4 (v2407.40000.0.0): 
-> ~~``Monday 15th July 2024``~~  **Available Now (via the Pre-release buttons in [Downloads](https://github.com/MustardChef/WSABuilds#downloads))** 
-> ### WSABuilds LTS 3 (v2311.40000.5.0): 
-> ~~``Monday 03rd June 2024``~~  **Available Now (via the Pre-release buttons in [Downloads](https://github.com/MustardChef/WSABuilds#downloads))** 
-> ### WSABuilds LTS 2 (v2311.40000.5.0): 
-> ~~``Friday 03rd May 2024``~~   **Available Now (via the Pre-release buttons in [Downloads](https://github.com/MustardChef/WSABuilds#downloads))** 
-> ### WSABuilds LTS 1 (v2311.40000.5.0): 
-> ~~``Wednesday 03rd April 2024``~~  **Available Now (via the Pre-release buttons in [Downloads](https://github.com/MustardChef/WSABuilds#downloads))**  
+> ## To view the bugfixes and improvements that are currently being worked on, and the current state of the WSABuilds project, [refer to the corresponding project page](https://github.com/users/MustardChef/projects/5) 
+
       
-
 <br/>
-
 <p align="center">
 <a href="https://github.com/MustardChef/WSABuilds#downloads"><img src="https://img.shields.io/github/downloads/MustardChef/WSABuilds/total?label=Total%20Downloads&amp;style=for-the-badge"/></a> <a href="https://forum.xda-developers.com/t/wsabuilds-latest-windows-subsystem-for-android-wsa-builds-for-   windows-10-and-11-with-magisk-and-google-play-store.4545087/"><img src="https://img.shields.io/badge/XDA%20Developers-WSABuilds-EA7100?style=for-the-badge&amp;logoColor=white&amp;logo=XDA-Developers"/></a> <a href="https://ko-fi.com/N4N0K08AC"><img alt="ko-fi" src="https://ko-fi.com/img/githubbutton_sm.svg"/></a>
 </p>
@@ -68,8 +28,7 @@
 <br/><a href="https://github.com/MustardChef/WSABuilds/blob/master/Documentation/Sponsors/PetroSky.md"><img align="right" src="https://github.com/user-attachments/assets/5bf3e8f6-2b92-448c-b90f-4d3210900bab" width="480"/></a>
 <br/> <br/> <br/> <br/> <br/> <br/> <br/>
 <img align="left" alt="downloads-folder" height="54" src="https://img.icons8.com/3d-fluency/94/downloads-folder.png" width="54"/><h2>Downloads</h2>
-
-<div align="center">   
+<div align="center">
 <details>
 <summary><a href="https://github.com/MustardChef/WSABuilds/blob/master/Documentation/WSABuilds/Information.md"><img height="35" src="https://img.icons8.com/3d-fluency/94/ok.png" style="float: left;" width="35"/><h3><a href="https://github.com/MustardChef/WSABuilds/blob/master/Documentation/WSABuilds/Information.md">   WSABuilds Project Status</a></h3></a></summary>
 <center><h3>⚠️❗IMPORTANT: Read Before Downloading❗⚠️</h3></center>
@@ -286,23 +245,24 @@
 <td>v2311.40000.5.0_LTS_3</td>
 <td>✅</td>
 <td>✅</td>
-</tr>
 <td>v2407.40000.0.0_LTS_4</td>
 <td>✅</td>
 <td>✅</td>
-</tr>
 <td>v2407.40000.0.0_LTS_5</td>
 <td>✅</td>
 <td>✅</td>
-</tr>
 <td>v2407.40000.0.0_LTS_6</td>
-<td>➖</td>
-<td>➖</td>
-</tr>
+<td>✅</td>
+<td>✅</td>
 <td>v2407.40000.4.0</td>
+<td>✅</td>
+<td>✅</td>
+<td>v2407.40000.0.0_LTS_7</td>
 <td>➖</td>
 <td>➖</td>
-</tr>  
+<td>v2407.40000.4.0_v2</td>
+<td>➖</td>
+<td>➖</td>
 </tbody>
 </table>
 <table>
@@ -361,13 +321,13 @@
 </tr>
 <tr>
 <td><b>Current Version:</b></td>
-<td>v2407.40000.0.0_LTS_6</td>
-<td colspan="2">v2407.40000.4.0</td>
+<td>v2407.40000.0.0_LTS_7</td>
+<td colspan="2">v2407.40000.4.0_v2</td>
 </tr>
 <tr>
 <td><b>Release Date:</b></td>
-<td>09/12/2024</td>
-<td colspan="2">09/12/2024</td>
+<td>02/06/2025</td>
+<td colspan="2">02/06/2025</td>
 </tr>
 <tr>
 <td>Update Frequency:</td>
@@ -387,28 +347,28 @@
 <tbody>
 <tr>
 <td rowspan="4"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Windows_11_logo.svg" style="width: 200px;"/></td>
-<td><p><a href="https://github.com/MustardChef/WSABuilds/releases/tag/Windows_11_2407.40000.4.0_LTS_6"><img alt="win11x64downpre" src="https://img.shields.io/badge/Download%20Latest%20Pre--Release%20Builds-Windows%2011%20x64-orange?style=for-the-badge&amp;logo=windows11"/></a></p></td>
+<td><p><a href="https://github.com/MustardChef/WSABuilds/releases/tag/Windows_11_2407.40000.4.0_LTS_7_HOTFIX_1"><img alt="win11x64downpre" src="https://img.shields.io/badge/Download%20Latest%20Pre--Release%20Builds-Windows%2011%20x64-orange?style=for-the-badge&amp;logo=windows11"/></a></p></td>
 <td rowspan="2"><p><a href="https://x6cgr-my.sharepoint.com/:f:/g/personal/mcdt_x6cgr_onmicrosoft_com/EoVMTqCKkgVFvFlJTcz1u0gBdOBqLIwjT-9okE8eCpp3Aw?e=7y5PIT"><img src="https://img.shields.io/badge/OneDrive-white?style=for-the-badge&amp;logo=Microsoft%20OneDrive&amp;logoColor=0078D4" style="width: 150px;"/></a></p></td>
 </tr>
 <tr>
-<td><p><a href="https://github.com/MustardChef/WSABuilds/releases/tag/Windows_11_2407.40000.4.0_LTS_6_arm64"><img alt="win11arm64downpre" src="https://img.shields.io/badge/Download%20Latest%20Pre--Release%20Builds-Windows%2011%20arm64-orange?style=for-the-badge&amp;logo=windows11"/></a></p></td>
+<td><p><a href="https://github.com/MustardChef/WSABuilds/releases/tag/Windows_11_2407.40000.4.0_LTS_7_HOTFIX_1_arm64"><img alt="win11arm64downpre" src="https://img.shields.io/badge/Download%20Latest%20Pre--Release%20Builds-Windows%2011%20arm64-orange?style=for-the-badge&amp;logo=windows11"/></a></p></td>
 </tr>
 <tr>
-<td><p><a href="https://github.com/MustardChef/WSABuilds/releases/tag/Windows_11_2407.40000.4.0"><img alt="win11x64downstable" src="https://img.shields.io/badge/Download%20Latest%20Stable%20Builds-Windows%2011%20x64-blue?style=for-the-badge&amp;logo=windows11"/></a></p></td>
+<td><p><a href="https://github.com/MustardChef/WSABuilds/releases/tag/Windows_11_2407.40000.4.0_LTS_7_HOTFIX_1"><img alt="win11x64downstable" src="https://img.shields.io/badge/Download%20Latest%20Stable%20Builds-Windows%2011%20x64-blue?style=for-the-badge&amp;logo=windows11"/></a></p></td>
 <td rowspan="2"><p><a href="https://x6cgr-my.sharepoint.com/:f:/g/personal/mcdt_x6cgr_onmicrosoft_com/EoVMTqCKkgVFvFlJTcz1u0gBdOBqLIwjT-9okE8eCpp3Aw?e=7y5PIT"><img src="https://img.shields.io/badge/OneDrive-white?style=for-the-badge&amp;logo=Microsoft%20OneDrive&amp;logoColor=0078D4" style="width: 150px;"/></a></p>
 </td>
 </tr>
 <tr>
-<td><p><a href="https://github.com/MustardChef/WSABuilds/releases/tag/Windows_11_2407.40000.4.0_arm64"><img alt="win11arm64downstable" src="https://img.shields.io/badge/Download%20Latest%20Stable%20Builds-Windows%2011%20arm64-blue?style=for-the-badge&amp;logo=windows11"/></a></p></td>
+<td><p><a href="https://github.com/MustardChef/WSABuilds/releases/tag/Windows_11_2407.40000.4.0_LTS_7_HOTFIX_1_arm64"><img alt="win11arm64downstable" src="https://img.shields.io/badge/Download%20Latest%20Stable%20Builds-Windows%2011%20arm64-blue?style=for-the-badge&amp;logo=windows11"/></a></p></td>
 </tr>
 <tr>
 <td rowspan="2"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Windows_10_Logo.svg" style="width: 200px;"/></td>
-<td><p><a href="https://github.com/MustardChef/WSABuilds/releases/tag/Windows_10_2407.40000.4.0_LTS_6"><img alt="win10x64down" src="https://img.shields.io/badge/Download%20Latest%20Pre--Release%20Builds-Windows%2010%20x64-orange?style=for-the-badge&amp;logo=windows"/></a></p></td>
+<td><p><a href="https://github.com/MustardChef/WSABuilds/releases/tag/Windows_10_2407.40000.4.0_LTS_7_HOTFIX_1"><img alt="win10x64down" src="https://img.shields.io/badge/Download%20Latest%20Pre--Release%20Builds-Windows%2010%20x64-orange?style=for-the-badge&amp;logo=windows"/></a></p></td>
 <td><p><a href="https://x6cgr-my.sharepoint.com/:f:/g/personal/mcdt_x6cgr_onmicrosoft_com/Enm0Tn0BRMlFmrfCWP9Omf0BCiQU0zybeXZtAyOfOVSQqA?e=v6UQyp"><img src="https://img.shields.io/badge/OneDrive-white?style=for-the-badge&amp;logo=Microsoft%20OneDrive&amp;logoColor=0078D4" style="width: 150px;"/></a></p>
 </td>
 </tr>
 <tr>
-<td><p><a href="https://github.com/MustardChef/WSABuilds/releases/tag/Windows_10_2407.40000.4.0"><img alt="win10x64down" src="https://img.shields.io/badge/Download%20Latest%20Stable%20Builds-Windows%2010%20x64-blue?style=for-the-badge&amp;logo=windows"/></a></p></td>
+<td><p><a href="https://github.com/MustardChef/WSABuilds/releases/tag/Windows_10_2407.40000.4.0_LTS_7_HOTFIX_1"><img alt="win10x64down" src="https://img.shields.io/badge/Download%20Latest%20Stable%20Builds-Windows%2010%20x64-blue?style=for-the-badge&amp;logo=windows"/></a></p></td>
 <td><p><a href="https://x6cgr-my.sharepoint.com/:f:/g/personal/mcdt_x6cgr_onmicrosoft_com/Enm0Tn0BRMlFmrfCWP9Omf0BCiQU0zybeXZtAyOfOVSQqA?e=v6UQyp"><img src="https://img.shields.io/badge/OneDrive-white?style=for-the-badge&amp;logo=Microsoft%20OneDrive&amp;logoColor=0078D4" style="width: 150px;"/></a></p></td>
 </tr>
 <tr>
@@ -434,8 +394,6 @@
 </tr>
 </tbody>
 </table>
-
-      
 <img align="left" alt="system-information" height="58" src="https://img.icons8.com/fluency/48/system-information.png" width="58"/><h2>Requirements</h2>
 <center><table>
 <thead>
@@ -497,9 +455,69 @@
 </tr>
 </tbody>
 </table>
+<br/>
 
- 
+> [!IMPORTANT]  
+> <details>
+> <summary><h3>IF YOU HAVE BEEN RECENTLY HAVING ISSUES WITH SOME APPS BREAKING OR NOT STARTING OR APPS GETTING SUCK AT LOADING SCREEN OR APPS STUCK ON SPLASHSCREEN ( STUCK ON THE APP ICON SCREEN) OR ANY OTHER SIMILAR CASES AFTER <code>2ND JANUARY 2026</code>. (CLICK HERE)</h3></summary>
+>   
+> ### UPDATE TO THE LATEST LTS AND NON-LTS RELEASES:   
+>
+> - ### LTS Releases:
+>    - ``Magisk is bundled by default on builds with Google Apps (GApps)):``
+>    - [Windows 11 x64](https://github.com/MustardChef/WSABuilds/releases/tag/Windows_11_2407.40000.4.0_LTS_7_HOTFIX_1)
+>    - [Windows 10 x64](https://github.com/MustardChef/WSABuilds/releases/tag/Windows_10_2407.40000.4.0_LTS_7_HOTFIX_1)
+>
+> - ### Non-LTS Releases: 
+>    - ``(If you don't want Magisk being bundled by default) (Releases contain no Magisk builds)``
+>    - [Windows 11 x64](https://github.com/MustardChef/WSABuilds/releases/tag/Windows_11_2407.40000.4.0_LTS_7_HOTFIX_1)
+>    - [Windows 10 x64](https://github.com/MustardChef/WSABuilds/releases/tag/Windows_10_2407.40000.4.0_LTS_7_HOTFIX_1)
+>
+> #### If some apps that worked before, still refuse to work after updating, try clearing the app data and cache or reinstalling the apps. If the issue still occurs, you may need to perform a clean install to fix some apps. Create a backup before proceeding. 
+>      
+> #### LET ME KNOW VIA GITHUB ISSUES, THE WSA COMMUNITY DISCORD OR THE r/WSA SUBREDDIT IF THESE RELEASES HAVE SOLVED YOUR ISSUE. THANK YOU.
+> </details>
 
+> [!TIP]
+> <details>
+> <summary><h2> WSA End Of Support (EoS) Information (Click Here)</h2></summary>
+> 
+> ## "Microsoft is ending support for the Windows Subsystem for Android™️ (WSA). As a result, the Amazon Appstore on Windows and all applications and games dependent on WSA will no longer be supported beginning March 5, 2025." 
+> ###### (Source: [GitHub](https://github.com/microsoft/WSA/discussions/536) and [Microsoft Learn](https://learn.microsoft.com/en-us/windows/android/wsa/))
+> ---
+> ### WSABuilds has entered LTS (Long Term Support) for WSA versions ≥ 2311.40000.5.0, where the Magisk version, KernelSU version and GApps version will be kept up to date via new releases.
+> ### This repo will not be archived and support will still be given to any users installing WSA Builds from this repo. Thank you all for using this repository and supporting my work, its been a pleasure serving this community. 
+> ### Do make sure that you keep a look out for any updates to this repo to be notified of any futher changes to WSA and WSABuilds      
+>
+> ---
+> </details>
+>
+> 
+> <details>
+> <summary><h2>Next LTS and Non-LTS Release Date: (Click Here)</h2></summary>
+>   
+> ### Non-LTS Build Update (v2407.40000.4.0_v2):
+> ~~``Monday 2nd June 2025``~~  **Available Now (via the Stable release buttons in [Downloads](https://github.com/MustardChef/WSABuilds#downloads))**
+> ### WSABuilds LTS 7 (v2407.40000.4.0) 
+> ~~``Monday 2nd June 2025``~~  **Available Now (via the Pre-release buttons in [Downloads](https://github.com/MustardChef/WSABuilds#downloads))**    
+> ### Non-LTS Build Update (v2407.40000.4.0):
+> ~~``Monday 9th December 2024``~~  **Available Now (via the Stable release buttons in [Downloads](https://github.com/MustardChef/WSABuilds#downloads))**
+> ### WSABuilds LTS 6 (v2407.40000.4.0) 
+> ~~``Monday 9th December 2024``~~  **Available Now (via the Pre-release buttons in [Downloads](https://github.com/MustardChef/WSABuilds#downloads))** 
+> ### Non-LTS Build Update (v2407.40000.0.0):
+> ~~``Thursday 5th December 2024``~~  **Available Now (via the Stable release buttons in [Downloads](https://github.com/MustardChef/WSABuilds#downloads))**
+> ### WSABuilds LTS 5 (v2407.40000.0.0) 
+> ~~``Thursday 5th December 2024``~~  **Available Now (via the Pre-release buttons in [Downloads](https://github.com/MustardChef/WSABuilds#downloads))** 
+> ### WSABuilds LTS 4 (v2407.40000.0.0): 
+> ~~``Monday 15th July 2024``~~  **Available Now (via the Pre-release buttons in [Downloads](https://github.com/MustardChef/WSABuilds#downloads))** 
+> ### WSABuilds LTS 3 (v2311.40000.5.0): 
+> ~~``Monday 03rd June 2024``~~  **Available Now (via the Pre-release buttons in [Downloads](https://github.com/MustardChef/WSABuilds#downloads))** 
+> ### WSABuilds LTS 2 (v2311.40000.5.0): 
+> ~~``Friday 03rd May 2024``~~   **Available Now (via the Pre-release buttons in [Downloads](https://github.com/MustardChef/WSABuilds#downloads))** 
+> ### WSABuilds LTS 1 (v2311.40000.5.0): 
+> ~~``Wednesday 03rd April 2024``~~  **Available Now (via the Pre-release buttons in [Downloads](https://github.com/MustardChef/WSABuilds#downloads))**  
+
+<br/>
 <details>
 <summary><a href="https://github.com/MustardChef/WSABuilds/blob/master/Documentation/WSABuilds/Installation.md"><img height="60" src="https://img.icons8.com/color/96/null/software-installer.png" style="float: left;" width="60"/><h1><a href="https://github.com/MustardChef/WSABuilds/blob/master/Documentation/WSABuilds/Installation.md">   Installation</a></h1></a></summary>
 
@@ -905,6 +923,7 @@ wsa://com.apple.android.music
 | Boost for Reddit | 1.12.5 | 12 | ✅
 | Bouncer | 1.26.3 | 11 | ⚠️
 | Brave Browser | 1.30.87 | 11 | ✅
+| Brawl Stars | | 13 | ❌ | App gets stuck on loading screen
 | BritBox by BBC &amp; ITV | 2.1.2 (20043) | 11 | ❌ | App crashes on start
 | Bromite | 94.0.4606.94 | 11 | ✅ || Use x64 build
 | Camera | 2.0.002 | 13 | ⚠️ | While taking pictures or video works fine but changing the camera (to an inactive virtual camera) freezes the app. | Included in the subsystem
@@ -1138,6 +1157,7 @@ wsa://com.apple.android.music
 | SAI (Split APKs Installer) (F-Droid) | 4.5 | 12 | ✅ || Used rootless method only, not yet tested for rooted WSA
 | SATRIA | 1.0.0 | 11 | ❌ | Needs fingerprint reader support
 | SD Maid (pro) | 5.2.2 | 11 | ⚠️ | Unable to grant external storage privileges, can be skipped
+| Seal | 1.13.1 | 13 | ❌ | Opens up to CrashReportActivity, freezes
 | Settings | 13, API 33 | 13 | ⚠️ | Setting screen lock to "Swipe", makes it impossible to use any apps without re-installing the entire Subsystem, since no method is provided on the lock screen to swipe or otherwise unlock. Adding a Google account in the Account menu doesn't work (the settings app will quit if you just clicked back when adding a new Google account). "Backup" and "SOS Alarm" send the phone back to the main Settings menu. | Included by default in Subsystem. Accessed by creating a Windows shortcut with this path: `%LOCALAPPDATA%\Microsoft\WindowsApps\MicrosoftCorporationII.WindowsSubsystemForAndroid_8wekyb3d8bbwe\WsaClient.exe /launch wsa://com.android.settings`
 | Shazam | 13.19.0-230223 | 13, 12 | ✅ | Shazam on pop-up doesn't work | Requires microphone for song identification
 | Shein | 9.9.4 | 13 | ✅ || Keep it in portrait to be usable
@@ -1183,6 +1203,7 @@ wsa://com.apple.android.music
 | Terminal Emulator for Android | 1.0.70-rebuild | 12 | ✅ | A warning shows up about the app being designed for older Android versions, but can be dismissed
 | Termux (F-droid) | 0.118.0 | 13, 12, 11 |✅
 | Tesla | 4.6.1 | 11 | ⚠️ | Vehicle graphics and maps do not load, cannot enable phone key. | Internet-based vehicle controls, charge stats, services are functional.
+| TATS Dijital Kitap Uygulaması | | 13 | ✅ | Sometimes scaling issues can occur, can be fixed by changing window size
 | The Globe and Mail | 6.2.0 (100) | 11 | ✅
 | TIDAL | 2.49.0 | 11 | ✅
 | TikTok (China) | 18.1.0 | 11 | ⚠️ | App crashes on first startup and you might face hiccups logging in
@@ -1665,7 +1686,7 @@ wsa://com.apple.android.music
 >***Android is a trademark of Google LLC. Windows™ and Windows Subsystem for Android™ are trademarks of Microsoft LLC.***
 
 </details>
-</center>
+</details></center>
 
 
 ---
@@ -1681,3 +1702,4 @@ wsa://com.apple.android.music
    - ([License](https://intercom.help/icons8-7fb7577e8170/en/articles/5534926-universal-multimedia-license-agreement-for-icons8))
 
 Please read the following Licenses in full before copy, modifiying, adapting and forking any of the content, code, images, videos and/or information from this GitHub repository.
+

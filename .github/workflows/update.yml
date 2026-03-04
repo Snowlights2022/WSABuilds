@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout ♻️
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Install Dependencies 🧑‍🏭
         run: |
@@ -70,7 +70,7 @@ jobs:
             echo MTG Update Message: ${{ env.MTG_MSG }}   
 
       - name: Update App version 🔗
-        uses: stefanzweifel/git-auto-commit-action@v5.0.1
+        uses: stefanzweifel/git-auto-commit-action@v7.0.0
         with:
           branch: update
           push_options: '--force'
@@ -79,7 +79,7 @@ jobs:
           create_branch: true
           
       - name: Delete old workflow run ❌
-        uses: Mattraks/delete-workflow-runs@v2.0.6
+        uses: Mattraks/delete-workflow-runs@v2.1.0
         with:
           token: ${{ github.token }}
           repository: ${{ github.repository }}
@@ -88,7 +88,7 @@ jobs:
           delete_workflow_pattern: "Check update"
           
       - name: Checkout Again! 🔄
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
     outputs:
       MAGISK_CANARY_MSG: ${{ env.MAGISK_CANARY_MSG }}
@@ -102,15 +102,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🔄
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
@@ -179,7 +179,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🔄
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Prepare release tag 🏷️
         id: releasetag

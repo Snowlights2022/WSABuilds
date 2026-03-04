@@ -30,10 +30,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout ♻️
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Python 🏭
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           check-latest: true
           python-version: '3.x'
@@ -107,7 +107,7 @@ jobs:
           echo ${{ env.DRIVE_FOLDER_PATH }}
           
       - name: Pass to Windows 💸
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: ${{ steps.wsa.outputs.artifact }}-${{ steps.wsa.outputs.built }}
           path: MagiskOnWSAOld/output
@@ -127,10 +127,10 @@ jobs:
     needs: build
     steps:
       - name: Checkout ♻️
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Download built artifact ⌛
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v6
         with:
           path: output
           name: ${{ needs.build.outputs.zipname }}-${{ needs.build.outputs.built }}
